@@ -19,7 +19,7 @@ const isMacOS = process.platform === 'darwin';
 
 if (require('electron-squirrel-startup')) app.quit();
 
-const PORT = isDev ? '5173' : '51735';
+const PORT = isDev ? '0.0.0.0:5173' : '0.0.0.0:51735';
 const ICON = 'icon-rounded.png';
 const ICON_TEMPLATE = 'iconTemplate.png';
 

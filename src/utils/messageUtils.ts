@@ -21,10 +21,8 @@ export const getChatGPTEncoding = (
   messages: MessageInterface[],
   model: ModelOptions
 ) => {
-  const isGpt3 = model === 'gpt-3.5-turbo';
-
-  const msgSep = isGpt3 ? '\n' : '';
-  const roleSep = isGpt3 ? '\n' : '<|im_sep|>';
+  const msgSep = '';
+  const roleSep = '<|im_sep|>';
 
   const serialized = [
     messages

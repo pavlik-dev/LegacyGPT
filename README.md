@@ -71,18 +71,12 @@ Better ChatGPT comes with a bundle of amazing features! Here are some of them:
 - Chat title generator
 - Save chat automatically to local storage
 - Import / Export chat
-- Download chat (markdown / image / json)
 - Sync to Google Drive
-- Azure OpenAI endpoint support
 - Multiple language support (i18n)
 
 # 🛠️ Usage
 
-To get started, simply visit our website at <https://bettergpt.chat/>. There are 3 ways for you to start using Better ChatGPT.
-
-1. Enter into the API menu your OpenAI API Key obtained from [OpenAI API Keys](https://platform.openai.com/account/api-keys).
-2. Utilise the api endpoint proxy provided by [ayaka14732/ChatGPTAPIFree](https://github.com/ayaka14732/ChatGPTAPIFree) (if you are in a region with no access to ChatGPT)
-3. Host your own API endpoint by following the instructions provided here: <https://github.com/ayaka14732/ChatGPTAPIFree>. Subsequently, enter the API endpoint into the API menu.
+To get started, simply visit the website at <https://legacygpt.pyt.pp.ua/>.
 
 ## Desktop App
 
@@ -97,11 +91,11 @@ Download the desktop app [here](https://github.com/ztjhz/BetterChatGPT/releases)
 ### Features:
 
 - Unlimited local storage
-- Runs locally (access Better ChatGPT even if the website is not accessible)
+- Runs locally (access LegacyGPT even if the website is not accessible)
 
 # 🛫 Host your own Instance
 
-If you'd like to run your own instance of Better ChatGPT, you can easily do so by following these steps:
+If you'd like to run your own instance of LegacyGPT, you can easily do so by following these steps:
 
 ## Vercel
 

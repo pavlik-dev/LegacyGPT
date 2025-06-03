@@ -18,124 +18,136 @@ Carefully heed the user's instructions.
 Respond using Markdown.`;
 
 export const modelOptions: ModelOptions[] = [
-  'gpt-3.5-turbo',
-  'gpt-3.5-turbo-16k',
-  'gpt-3.5-turbo-1106',
-  'gpt-3.5-turbo-0125',
-  'gpt-4',
-  'gpt-4-32k',
-  'gpt-4-1106-preview',
-  'gpt-4-0125-preview',
-  'gpt-4-turbo',
-  'gpt-4-turbo-2024-04-09',
-  'gpt-4o',
-  'gpt-4o-2024-05-13',
-  // 'gpt-3.5-turbo-0301',
-  // 'gpt-4-0314',
-  // 'gpt-4-32k-0314',
+  "openai",
+  "openai-fast",
+  "openai-large",
+  "openai-roblox",
+  "qwen-coder",
+  "llama",
+  "llamascout",
+  "mistral",
+  "unity",
+  "mirexa",
+  "searchgpt",
+  "deepseek-reasoning",
+  "phi",
+  "hormoz",
+  "deepseek",
+  "grok",
+  "bidara"
 ];
 
-export const defaultModel = 'gpt-3.5-turbo';
+export const modelNames: Record<ModelOptions, string> = {
+  "openai": "GPT-4.1-mini",
+  "openai-fast": "GPT-4.1-nano",
+  "openai-large": "GPT-4.1",
+  "openai-roblox": "GPT-4.1-mini (Roblox)",
+  "qwen-coder": "Qwen 2.5 Coder 32B",
+  "llama": "Llama 3.3 70B",
+  "llamascout": "Llama 4 Scout 17B",
+  "mistral": "Mistral Small 3.1 24B",
+  "unity": "Unity",
+  "mirexa": "Mirexa",
+  "searchgpt": "SearchGPT",
+  "deepseek-reasoning": "DeepSeek R1",
+  "phi": "Phi-4 Instruct",
+  "hormoz": "Hormoz 8b",
+  "deepseek": "DeepSeek-V3",
+  "grok": "Grok-3 Mini",
+  "bidara": "BIDARA"
+}
 
-export const modelMaxToken = {
-  'gpt-3.5-turbo': 4096,
-  'gpt-3.5-turbo-0301': 4096,
-  'gpt-3.5-turbo-0613': 4096,
-  'gpt-3.5-turbo-16k': 16384,
-  'gpt-3.5-turbo-16k-0613': 16384,
-  'gpt-3.5-turbo-1106': 16384,
-  'gpt-3.5-turbo-0125': 16384,
-  'gpt-4': 8192,
-  'gpt-4-0314': 8192,
-  'gpt-4-0613': 8192,
-  'gpt-4-32k': 32768,
-  'gpt-4-32k-0314': 32768,
-  'gpt-4-32k-0613': 32768,
-  'gpt-4-1106-preview': 128000,
-  'gpt-4-0125-preview': 128000,
-  'gpt-4-turbo': 128000,
-  'gpt-4-turbo-2024-04-09': 128000,
-  'gpt-4o': 128000,
-  'gpt-4o-2024-05-13': 128000,
+export const defaultModel = 'openai';
+
+export const modelMaxToken: Record<ModelOptions, number> = {
+  'openai': 1047576,
+  'openai-fast': 1047576,
+  'openai-large': 1047576,
+  "openai-roblox": 1047576,
+  "qwen-coder": 32768,
+  'llama': 24000,
+  'llamascout': 131000,
+  'mistral': 128000,
+  'unity': 128000,
+  'mirexa': 1047576,
+  'searchgpt': 128000,
+  'deepseek-reasoning': 128000,
+  'phi': 16000,
+  'hormoz': 128000,
+  'deepseek': 128000,
+  'grok': 131072,
+  'bidara': 8192
 };
 
 export const modelCost = {
-  'gpt-3.5-turbo': {
-    prompt: { price: 0.0015, unit: 1000 },
-    completion: { price: 0.002, unit: 1000 },
-  },
-  'gpt-3.5-turbo-0301': {
-    prompt: { price: 0.0015, unit: 1000 },
-    completion: { price: 0.002, unit: 1000 },
-  },
-  'gpt-3.5-turbo-0613': {
-    prompt: { price: 0.0015, unit: 1000 },
-    completion: { price: 0.002, unit: 1000 },
-  },
-  'gpt-3.5-turbo-16k': {
-    prompt: { price: 0.003, unit: 1000 },
-    completion: { price: 0.004, unit: 1000 },
-  },
-  'gpt-3.5-turbo-16k-0613': {
-    prompt: { price: 0.003, unit: 1000 },
-    completion: { price: 0.004, unit: 1000 },
-  },
-  'gpt-3.5-turbo-1106': {
-    prompt: { price: 0.001, unit: 1000 },
-    completion: { price: 0.0015, unit: 1000 },
-  },
-  'gpt-3.5-turbo-0125': {
-    prompt: { price: 0.0005, unit: 1000 },
-    completion: { price: 0.0015, unit: 1000 },
-  },
-  'gpt-4': {
-    prompt: { price: 0.03, unit: 1000 },
-    completion: { price: 0.06, unit: 1000 },
-  },
-  'gpt-4-0314': {
-    prompt: { price: 0.03, unit: 1000 },
-    completion: { price: 0.06, unit: 1000 },
-  },
-  'gpt-4-0613': {
-    prompt: { price: 0.03, unit: 1000 },
-    completion: { price: 0.06, unit: 1000 },
-  },
-  'gpt-4-32k': {
-    prompt: { price: 0.06, unit: 1000 },
-    completion: { price: 0.12, unit: 1000 },
-  },
-  'gpt-4-32k-0314': {
-    prompt: { price: 0.06, unit: 1000 },
-    completion: { price: 0.12, unit: 1000 },
-  },
-  'gpt-4-32k-0613': {
-    prompt: { price: 0.06, unit: 1000 },
-    completion: { price: 0.12, unit: 1000 },
-  },
-  'gpt-4-1106-preview': {
-    prompt: { price: 0.01, unit: 1000 },
-    completion: { price: 0.03, unit: 1000 },
-  },
-  'gpt-4-0125-preview': {
-    prompt: { price: 0.01, unit: 1000 },
-    completion: { price: 0.03, unit: 1000 },
-  },
-  'gpt-4-turbo': {
-    prompt: { price: 0.01, unit: 1000 },
-    completion: { price: 0.03, unit: 1000 },
-  },
-  'gpt-4-turbo-2024-04-09': {
-    prompt: { price: 0.01, unit: 1000 },
-    completion: { price: 0.03, unit: 1000 },
-  },
-  'gpt-4o': {
+  'openai': {
     prompt: { price: 0.005, unit: 1000 },
     completion: { price: 0.015, unit: 1000 },
   },
-  'gpt-4o-2024-05-13': {
+  'openai-fast': {
     prompt: { price: 0.005, unit: 1000 },
     completion: { price: 0.015, unit: 1000 },
   },
+  'openai-large': {
+    prompt: { price: 0.005, unit: 1000 },
+    completion: { price: 0.015, unit: 1000 },
+  },
+  "openai-roblox": {
+    prompt: { price: 0.005, unit: 1000 },
+    completion: { price: 0.015, unit: 1000 },
+  },
+  "qwen-coder": {
+    prompt: { price: 0.005, unit: 1000 },
+    completion: { price: 0.015, unit: 1000 },
+  },
+  'llama': {
+    prompt: { price: 0.005, unit: 1000 },
+    completion: { price: 0.015, unit: 1000 },
+  },
+  'llamascout': {
+    prompt: { price: 0.005, unit: 1000 },
+    completion: { price: 0.015, unit: 1000 },
+  },
+  'mistral': {
+    prompt: { price: 0.005, unit: 1000 },
+    completion: { price: 0.015, unit: 1000 },
+  },
+  'unity': {
+    prompt: { price: 0.005, unit: 1000 },
+    completion: { price: 0.015, unit: 1000 },
+  },
+  'mirexa': {
+    prompt: { price: 0.005, unit: 1000 },
+    completion: { price: 0.015, unit: 1000 },
+  },
+  'searchgpt': {
+    prompt: { price: 0.005, unit: 1000 },
+    completion: { price: 0.015, unit: 1000 },
+  },
+  'deepseek-reasoning': {
+    prompt: { price: 0.005, unit: 1000 },
+    completion: { price: 0.015, unit: 1000 },
+  },
+  'phi': {
+    prompt: { price: 0.005, unit: 1000 },
+    completion: { price: 0.015, unit: 1000 },
+  },
+  'hormoz': {
+    prompt: { price: 0.005, unit: 1000 },
+    completion: { price: 0.015, unit: 1000 },
+  },
+  'deepseek': {
+    prompt: { price: 0.005, unit: 1000 },
+    completion: { price: 0.015, unit: 1000 },
+  },
+  'grok': {
+    prompt: { price: 0.005, unit: 1000 },
+    completion: { price: 0.015, unit: 1000 },
+  },
+  'bidara': {
+    prompt: { price: 0.005, unit: 1000 },
+    completion: { price: 0.015, unit: 1000 },
+  }
 };
 
 export const defaultUserMaxToken = 4000;
