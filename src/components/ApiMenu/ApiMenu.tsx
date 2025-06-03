@@ -4,8 +4,6 @@ import useStore from '@store/store';
 
 import useHideOnOutsideClick from '@hooks/useHideOnOutsideClick';
 
-import PopupModal from '@components/PopupModal';
-
 import { availableEndpoints, defaultAPIEndpoint } from '@constants/auth';
 
 import DownChevronArrow from '@icon/DownChevronArrow';
