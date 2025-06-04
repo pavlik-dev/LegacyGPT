@@ -35,30 +35,29 @@ const EditView = ({
     if (textareaRef.current) textareaRef.current.style.height = 'auto';
   };
 
+  const isMobile = typeof window !== 'undefined' &&
+    window.matchMedia?.('(pointer: coarse)').matches;
+
   const handleKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
-    const isMobile =
-      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|playbook|silk/i.test(
-        navigator.userAgent
-      );
+    if (e.key !== 'Enter' || isMobile || e.nativeEvent.isComposing)
+      return;
 
-    if (e.key === 'Enter' && !isMobile && !e.nativeEvent.isComposing) {
-      const enterToSubmit = useStore.getState().enterToSubmit;
+    const enterToSubmit = useStore.getState().enterToSubmit;
 
-      if (e.ctrlKey && e.shiftKey) {
+    if (e.ctrlKey && e.shiftKey) {
+      e.preventDefault();
+      handleGenerate();
+      resetTextAreaHeight();
+    } else if (
+      (enterToSubmit && !e.shiftKey) ||
+      (!enterToSubmit && (e.ctrlKey || e.shiftKey))
+    ) {
+      if (sticky) {
         e.preventDefault();
         handleGenerate();
         resetTextAreaHeight();
-      } else if (
-        (enterToSubmit && !e.shiftKey) ||
-        (!enterToSubmit && (e.ctrlKey || e.shiftKey))
-      ) {
-        if (sticky) {
-          e.preventDefault();
-          handleGenerate();
-          resetTextAreaHeight();
-        } else {
-          handleSave();
-        }
+      } else {
+        handleSave();
       }
     }
   };
