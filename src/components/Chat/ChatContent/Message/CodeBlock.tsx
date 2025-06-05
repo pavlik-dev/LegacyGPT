@@ -36,7 +36,7 @@ const CodeBar = React.memo(
     return (
       <div className='flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans'>
         <span className=''>{lang}</span>
-        <button
+        {(navigator.clipboard) && <><button
           className='flex ml-auto gap-2'
           aria-label='copy codeblock'
           onClick={async () => {
@@ -59,7 +59,7 @@ const CodeBar = React.memo(
               Copy code
             </>
           )}
-        </button>
+        </button></>}
       </div>
     );
   }
