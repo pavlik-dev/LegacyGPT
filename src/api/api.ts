@@ -1,5 +1,6 @@
+import { modelProviders } from '@constants/chat';
 import { ShareGPTSubmitBodyInterface } from '@type/api';
-import { ConfigInterface, MessageInterface, ModelOptions } from '@type/chat';
+import { ConfigInterface, MessageInterface, ModelOptions, ModelProviders } from '@type/chat';
 import { isAzureEndpoint } from '@utils/api';
 
 export const getChatCompletion = async (
@@ -77,6 +78,14 @@ export const getChatCompletionStream = async (
     }
   }
 
+  const endpoints: Record<ModelProviders, string> = {
+    'pollinations.ai': 'https://text.pollinations.ai/openai',
+    'pavlik_tt': 'https://gpt.pavliktt.pp.ua/',
+    'Google': `https://gpt.pavliktt.pp.ua/`,
+    'OpenAI': 'https://api.openai.com/v1/chat/completions'
+  }
+  endpoint = endpoints[modelProviders[config.model]]
+
   const response = await fetch(endpoint, {
     method: 'POST',
     headers,
@@ -96,9 +105,7 @@ export const getChatCompletionStream = async (
           '\nMessage from Better ChatGPT:\nPlease ensure that you have access to the GPT-4 API!'
       );
     } else {
-      throw new Error(
-        'Message from Better ChatGPT:\nInvalid API endpoint! We recommend you to check your free API endpoint.'
-      );
+      throw new Error(text);
     }
   }
 
