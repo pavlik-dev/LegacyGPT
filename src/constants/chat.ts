@@ -1,5 +1,5 @@
 import { v4 as uuidv4 } from 'uuid';
-import { ChatInterface, ConfigInterface, ModelOptions } from '@type/chat';
+import { ChatInterface, ConfigInterface, ModelOptions, ModelProviders } from '@type/chat';
 import useStore from '@store/store';
 
 const date = new Date();
@@ -34,7 +34,11 @@ export const modelOptions: ModelOptions[] = [
   "hormoz",
   "deepseek",
   "grok",
-  "bidara"
+  "bidara",
+  'gemini-2.0-flash-lite-free',
+  'gemini-1.5-flash-8b-free',
+  'gemini-1.5-flash-free',
+  'gemini-1.5-pro-free',
 ];
 
 export const modelNames: Record<ModelOptions, string> = {
@@ -54,7 +58,11 @@ export const modelNames: Record<ModelOptions, string> = {
   "hormoz": "Hormoz 8b",
   "deepseek": "DeepSeek-V3",
   "grok": "Grok-3 Mini",
-  "bidara": "BIDARA"
+  "bidara": "BIDARA",
+  'gemini-2.0-flash-lite-free': "Gemini 2.0 Flash Lite (free)",
+  'gemini-1.5-flash-8b-free': "Gemini 1.5 Flash 8B (free)",
+  'gemini-1.5-flash-free': "Gemini 1.5 Flash (free)",
+  'gemini-1.5-pro-free': "Gemini 1.5 Pro (free)",
 }
 
 export const defaultModel = 'openai';
@@ -76,79 +84,38 @@ export const modelMaxToken: Record<ModelOptions, number> = {
   'hormoz': 128000,
   'deepseek': 128000,
   'grok': 131072,
-  'bidara': 8192
+  'bidara': 8192,
+
+  'gemini-2.0-flash-lite-free': 1048576,
+  'gemini-1.5-flash-8b-free': 1000000,
+  'gemini-1.5-flash-free': 1000000,
+  'gemini-1.5-pro-free': 2000000,
 };
 
-export const modelCost = {
-  'openai': {
-    prompt: { price: 0.005, unit: 1000 },
-    completion: { price: 0.015, unit: 1000 },
-  },
-  'openai-fast': {
-    prompt: { price: 0.005, unit: 1000 },
-    completion: { price: 0.015, unit: 1000 },
-  },
-  'openai-large': {
-    prompt: { price: 0.005, unit: 1000 },
-    completion: { price: 0.015, unit: 1000 },
-  },
-  "openai-roblox": {
-    prompt: { price: 0.005, unit: 1000 },
-    completion: { price: 0.015, unit: 1000 },
-  },
-  "qwen-coder": {
-    prompt: { price: 0.005, unit: 1000 },
-    completion: { price: 0.015, unit: 1000 },
-  },
-  'llama': {
-    prompt: { price: 0.005, unit: 1000 },
-    completion: { price: 0.015, unit: 1000 },
-  },
-  'llamascout': {
-    prompt: { price: 0.005, unit: 1000 },
-    completion: { price: 0.015, unit: 1000 },
-  },
-  'mistral': {
-    prompt: { price: 0.005, unit: 1000 },
-    completion: { price: 0.015, unit: 1000 },
-  },
-  'unity': {
-    prompt: { price: 0.005, unit: 1000 },
-    completion: { price: 0.015, unit: 1000 },
-  },
-  'mirexa': {
-    prompt: { price: 0.005, unit: 1000 },
-    completion: { price: 0.015, unit: 1000 },
-  },
-  'searchgpt': {
-    prompt: { price: 0.005, unit: 1000 },
-    completion: { price: 0.015, unit: 1000 },
-  },
-  'deepseek-reasoning': {
-    prompt: { price: 0.005, unit: 1000 },
-    completion: { price: 0.015, unit: 1000 },
-  },
-  'phi': {
-    prompt: { price: 0.005, unit: 1000 },
-    completion: { price: 0.015, unit: 1000 },
-  },
-  'hormoz': {
-    prompt: { price: 0.005, unit: 1000 },
-    completion: { price: 0.015, unit: 1000 },
-  },
-  'deepseek': {
-    prompt: { price: 0.005, unit: 1000 },
-    completion: { price: 0.015, unit: 1000 },
-  },
-  'grok': {
-    prompt: { price: 0.005, unit: 1000 },
-    completion: { price: 0.015, unit: 1000 },
-  },
-  'bidara': {
-    prompt: { price: 0.005, unit: 1000 },
-    completion: { price: 0.015, unit: 1000 },
-  }
-};
+export const modelProviders: Record<ModelOptions, ModelProviders> = {
+  'openai': 'pollinations.ai',
+  'openai-fast': 'pollinations.ai',
+  'openai-large': 'pollinations.ai',
+  "openai-roblox": 'pollinations.ai',
+  "qwen-coder": 'pollinations.ai',
+  'llama': 'pollinations.ai',
+  'llamascout': 'pollinations.ai',
+  'mistral': 'pollinations.ai',
+  'unity': 'pollinations.ai',
+  'mirexa': 'pollinations.ai',
+  'searchgpt': 'pollinations.ai',
+  'deepseek-reasoning': 'pollinations.ai',
+  'phi': 'pollinations.ai',
+  'hormoz': 'pollinations.ai',
+  'deepseek': 'pollinations.ai',
+  'grok': 'pollinations.ai',
+  'bidara': 'pollinations.ai',
+
+  'gemini-2.0-flash-lite-free': 'pavlik_tt',
+  'gemini-1.5-flash-8b-free': 'pavlik_tt',
+  'gemini-1.5-flash-free': 'pavlik_tt',
+  'gemini-1.5-pro-free': 'pavlik_tt',
+}
 
 export const defaultUserMaxToken = 4000;
 

@@ -66,7 +66,18 @@ export type ModelOptions =
   | "hormoz"
   | "deepseek"
   | "grok"
-  | "bidara";
+  | "bidara"
+  
+  | 'gemini-2.0-flash-lite-free'
+  | 'gemini-1.5-flash-8b-free'
+  | 'gemini-1.5-flash-free'
+  | 'gemini-1.5-pro-free';
+
+export type ModelProviders =
+  | "pollinations.ai"
+  | "pavlik_tt"
+  | "Google"
+  | "OpenAI";
 
 export type TotalTokenUsed = {
   [model in ModelOptions]?: {
