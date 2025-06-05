@@ -3,7 +3,6 @@ import useStore from '@store/store';
 import { shallow } from 'zustand/shallow';
 
 import countTokens from '@utils/messageUtils';
-import { modelCost } from '@constants/chat';
 
 const TokenCount = React.memo(() => {
   const [tokenCount, setTokenCount] = useState<number>(0);
@@ -20,12 +19,7 @@ const TokenCount = React.memo(() => {
       : 'openai'
   );
 
-  const cost = useMemo(() => {
-    const price =
-      modelCost[model].prompt.price *
-      (tokenCount / modelCost[model].prompt.unit);
-    return price.toPrecision(3);
-  }, [model, tokenCount]);
+  const cost = useMemo(() => 0, [model, tokenCount]);
 
   useEffect(() => {
     if (!generating) setTokenCount(countTokens(messages, model));
