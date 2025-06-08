@@ -48,11 +48,12 @@
     </a>
 </p>
 
-LegacyGPT is a project dedicated to recreating the classic ChatGPT interface from its early days (late 2022 to early 2023).
+LegacyGPT is a fork of [Better ChatGPT](https://github.com/ztjhz/BetterChatGPT) that aims to recreate the classic ChatGPT interface from late 2022 to early 2023.
+Most of the core functionality from Better ChatGPT remains unchanged; this project focuses on UI tweaks and preserving the early ChatGPT experience.
 
 # 🔥 Features
 
-LegacyGPT (as a fork of [Better ChatGPT](https://github.com/ztjhz/BetterChatGPT)) comes with a bundle of amazing features! Here are some of them:
+LegacyGPT (as a fork of [Better ChatGPT](https://github.com/ztjhz/BetterChatGPT) comes with a bundle of amazing features! Here are some of them:
 
 - Free access to GPT-4.1 and SearchGPT API provided by [pollinations.ai](https://pollinations.ai) and Gemini & Gemma API provided by [pavlik_tt](https://github.com/pavlik-dev/) (me :P)
 - Organize chats into folders (with colours)
@@ -71,7 +72,7 @@ To get started, simply visit the website at <https://legacygpt.pavliktt.pp.ua/>.
 
 ## Desktop App
 
-Download the desktop app [here](https://github.com/ztjhz/BetterChatGPT/releases)
+Download the desktop app [here](https://github.com/pavlik-dev/LegacyGPT/releases)
 
 | OS      | Download  |
 | ------- | --------- |
@@ -163,7 +164,7 @@ A ⭐️ to <b>LegacyGPT</b> is to make it shine brighter and benefit more peopl
 
 # ❤️ Contributors
 
-Thanks to all the contributors!
+Thanks to all the contributors, and of course, to @ztjhz for Better ChatGPT!
 
 <a href="https://github.com/pavlik-dev/LegacyGPT/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=pavlik-dev/LegacyGPT" />
