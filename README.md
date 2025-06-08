@@ -1,4 +1,4 @@
-<h1 align="center"><b>Better ChatGPT</b></h1>
+<h1 align="center"><b>LegacyGPT</b></h1>
 
 <p align="center">
    English Version |
@@ -8,40 +8,40 @@
 </p>
 
 <p align="center">
-    <a href="https://bettergpt.chat" target="_blank"><img src="public/apple-touch-icon.png" alt="Better ChatGPT" width="100" /></a>
+    <a href="https://legacygpt.pavliktt.pp.ua" target="_blank"><img src="public/apple-touch-icon.png" alt="LegacyGPT" width="100" /></a>
 </p>
 
 <h4 align="center"><b>Free, Powerful, Limitless, Intelligent, Engaging</b></h4>
 
 <p align="center">
-<a href="https://github.com/ztjhz/BetterChatGPT/blob/main/LICENSE" target="_blank">
-<img src="https://img.shields.io/github/license/ztjhz/BetterChatGPT?style=flat-square" alt="licence" />
+<a href="https://github.com/pavlik-dev/LegacyGPT/blob/main/LICENSE" target="_blank">
+<img src="https://img.shields.io/github/license/pavlik-dev/LegacyGPT?style=flat-square" alt="licence" />
 </a>
-<a href="https://github.com/ztjhz/BetterChatGPT/fork" target="_blank">
-<img src="https://img.shields.io/github/forks/ztjhz/BetterChatGPT?style=flat-square" alt="forks"/>
+<a href="https://github.com/pavlik-dev/LegacyGPT/fork" target="_blank">
+<img src="https://img.shields.io/github/forks/pavlik-dev/LegacyGPT?style=flat-square" alt="forks"/>
 </a>
-<a href="https://github.com/ztjhz/BetterChatGPT/stargazers" target="_blank">
-<img src="https://img.shields.io/github/stars/ztjhz/BetterChatGPT?style=flat-square" alt="stars"/>
+<a href="https://github.com/pavlik-dev/LegacyGPT/stargazers" target="_blank">
+<img src="https://img.shields.io/github/stars/pavlik-dev/LegacyGPT?style=flat-square" alt="stars"/>
 </a>
-<a href="https://github.com/ztjhz/BetterChatGPT/issues" target="_blank">
-<img src="https://img.shields.io/github/issues/ztjhz/BetterChatGPT?style=flat-square" alt="issues"/>
+<a href="https://github.com/pavlik-dev/LegacyGPT/issues" target="_blank">
+<img src="https://img.shields.io/github/issues/pavlik-dev/LegacyGPT?style=flat-square" alt="issues"/>
 </a>
-<a href="https://github.com/ztjhz/BetterChatGPT/pulls" target="_blank">
-<img src="https://img.shields.io/github/issues-pr/ztjhz/BetterChatGPT?style=flat-square" alt="pull-requests"/>
+<a href="https://github.com/pavlik-dev/LegacyGPT/pulls" target="_blank">
+<img src="https://img.shields.io/github/issues-pr/pavlik-dev/LegacyGPT?style=flat-square" alt="pull-requests"/>
 </a>
-<a href="https://twitter.com/intent/tweet?text=👋%20Check%20this%20amazing%20repo%20https://github.com/ztjhz/BetterChatGPT,%20created%20by%20@nikushii_"><img src="https://img.shields.io/twitter/url?label=Share%20on%20Twitter&style=social&url=https%3A%2F%2Fgithub.com%2Fztjhz%2FBetterChatGPT"></a>
+<a href="https://twitter.com/intent/tweet?text=👋%20Check%20this%20amazing%20repo%20https://github.com/pavlik-dev/LegacyGPT,%20created%20by%20@nikushii_"><img src="https://img.shields.io/twitter/url?label=Share%20on%20Twitter&style=social&url=https%3A%2F%2Fgithub.com%pavlik-dev%2FLegacyGPT"></a>
 </p>
 
 <p align="center">
-    <a href="https://bettergpt.chat">Enter Website</a>
+    <a href="https://legacygpt.pavliktt.pp.ua">Enter Website</a>
     ·
-    <a href="https://github.com/ztjhz/BetterChatGPT/issues/new/choose">Report Bug</a>
+    <a href="https://github.com/pavlik-dev/LegacyGPT/issues/new/choose">Report Bug</a>
     ·
-    <a href="https://github.com/ztjhz/BetterChatGPT/issues/new/choose">Request Feature</a>
+    <a href="https://github.com/pavlik-dev/LegacyGPT/issues/new/choose">Request Feature</a>
 </p>
-<p align="center"><i>Did you enjoy using Better ChatGPT? Give it some love with a star! 🌟</i></p>
+<p align="center"><i>Did you enjoy using LegacyGPT? Give it some love with a star! 🌟</i></p>
 
-## 👋🏻 Introducing Better ChatGPT
+## 👋🏻 Introducing LegacyGPT
 
 <p align="center">
     <a href="https://bettergpt.chat" target="_blank">
@@ -49,34 +49,27 @@
     </a>
 </p>
 
-Are you ready to unlock the full potential of ChatGPT with Better ChatGPT?
-
-Better ChatGPT is the ultimate destination for anyone who wants to experience the limitless power of conversational AI. With no limits and completely free to use for all, our app harnesses the full potential of OpenAI's ChatGPT API to offer you an unparalleled chatbot experience.
-
-Whether you're looking to chat with a virtual assistant, improve your language skills, or simply enjoy a fun and engaging conversation, our app has got you covered. So why wait? Join us today and explore the exciting world of Better ChatGPT!
+LegacyGPT is a project dedicated to recreating the classic ChatGPT interface from its early days (late 2022 to early 2023).
 
 # 🔥 Features
 
-Better ChatGPT comes with a bundle of amazing features! Here are some of them:
+LegacyGPT (as a fork of [Better ChatGPT](https://github.com/ztjhz/BetterChatGPT)) comes with a bundle of amazing features! Here are some of them:
 
-- Proxy to bypass ChatGPT regional restrictions
-- Prompt library
+- Free access to GPT-4.1 and SearchGPT API with [pollinations.ai](https://pollinations.ai)
+- Free Gemini & Gemma API provided by [pavlik_tt](https://github.com/pavlik-dev/) (me :P)
 - Organize chats into folders (with colours)
 - Filter chats and folders
-- Token count and pricing
 - ShareGPT integration
-- Custom model parameters (e.g. presence_penalty)
 - Chat as user / assistant / system
 - Edit, reorder and insert any messages, anywhere
 - Chat title generator
 - Save chat automatically to local storage
 - Import / Export chat
-- Sync to Google Drive
 - Multiple language support (i18n)
 
 # 🛠️ Usage
 
-To get started, simply visit the website at <https://legacygpt.pyt.pp.ua/>.
+To get started, simply visit the website at <https://legacygpt.pavliktt.pp.ua/>.
 
 ## Desktop App
 
@@ -101,15 +94,15 @@ If you'd like to run your own instance of LegacyGPT, you can easily do so by fol
 
 One click deploy with Vercel
 
-[![Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fztjhz%2FBetterChatGPT)
+[![Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fpavlik-dev%2FLegacyGPT)
 
 ## GitHub Pages
 
 ### Steps
 
 1. Create a GitHub account (if you don't have one already)
-1. Star this [repository](https://github.com/ztjhz/BetterChatGPT) ⭐️
-1. Fork this [repository](https://github.com/ztjhz/BetterChatGPT)
+1. Star this [repository](https://github.com/pavlik-dev/LegacyGPT) ⭐️
+1. Fork this [repository](https://github.com/pavlik-dev/LegacyGPT)
 1. In your forked repository, navigate to the `Settings` tab
    ![image](https://user-images.githubusercontent.com/59118459/223753577-9b6f8266-26e8-471b-8f45-a1a02fbab232.png)
 1. In the left sidebar, click on `Pages` and in the right section, select `GitHub Actions` for `source`.
@@ -132,8 +125,8 @@ One click deploy with Vercel
    - [node.js](https://nodejs.org/en/) (v14.18.0 or above)
    - [yarn](https://yarnpkg.com/) or [npm](https://www.npmjs.com/) (6.14.15 or above)
 
-2. Clone this [repository](https://github.com/ztjhz/BetterChatGPT) by running `git clone https://github.com/ztjhz/BetterChatGPT.git`
-3. Navigate into the directory by running `cd BetterChatGPT`
+2. Clone this [repository](https://github.com/pavlik-dev/LegacyGPT) by running `git clone https://github.com/pavlik-dev/LegacyGPT.git`
+3. Navigate into the directory by running `cd LegacyGPT`
 4. Run `yarn` or `npm install`, depending on whether you have yarn or npm installed.
 5. Launch the app by running `yarn dev` or `npm run dev`
 
@@ -164,27 +157,25 @@ One click deploy with Vercel
 
 # ⭐️ Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=ztjhz/BetterChatGPT&type=Date)](https://github.com/ztjhz/BetterChatGPT/stargazers)
+[![Star History Chart](https://api.star-history.com/svg?repos=pavlik-dev/LegacyGPT&type=Date)](https://github.com/pavlik-dev/LegacyGPT/stargazers)
 
 <h3 align="center">
-A ⭐️ to <b>Better ChatGPT</b> is to make it shine brighter and benefit more people.
+A ⭐️ to <b>LegacyGPT</b> is to make it shine brighter and benefit more people.
 </h3>
 
 # ❤️ Contributors
 
 Thanks to all the contributors!
 
-<a href="https://github.com/ztjhz/BetterChatGPT/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=ztjhz/BetterChatGPT" />
+<a href="https://github.com/pavlik-dev/LegacyGPT/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=pavlik-dev/LegacyGPT" />
 </a>
 
 # 🙏 Support
 
-At Better ChatGPT, we strive to provide you with useful and amazing features around the clock. And just like any project, your support and motivation will be instrumental in helping us keep moving forward!
+I'll appreciate it if you'll support me by giving this project a star, this means a lot to me!
 
-If you have enjoyed using our app, we kindly ask you to give this project a ⭐️. Your endorsement means a lot to us and encourages us to work harder towards delivering the best possible experience.
-
-If you would like to support the team, consider sponsoring us through one of the methods below. Every contribution, no matter how small, helps us to maintain and improve our service.
+You can also support Better ChatGPT (LegacyGPT is a fork of it) with payment methods below:
 
 | Payment Method | Link                                                                                                                                                 |
 | -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
