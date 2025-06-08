@@ -27,6 +27,11 @@ export const modelOptions: ModelOptions[] = [
   'gemini-1.5-flash-8b-free',
   'gemini-1.5-flash-free',
   'gemini-1.5-pro-free',
+  'gemma-3-1b-it-free',
+  'gemma-3-4b-it-free',
+  'gemma-3-12b-it-free',
+  'gemma-3-27b-it-free',
+  'gemma-3n-e4b-it-free',
 ];
 
 export const modelNames: Record<ModelOptions, string> = {
@@ -39,6 +44,11 @@ export const modelNames: Record<ModelOptions, string> = {
   'gemini-1.5-flash-8b-free': "Gemini 1.5 Flash 8B (free)",
   'gemini-1.5-flash-free': "Gemini 1.5 Flash (free)",
   'gemini-1.5-pro-free': "Gemini 1.5 Pro (free)",
+  'gemma-3-1b-it-free': "Gemma 3 1B (free)",
+  'gemma-3-4b-it-free': "Gemma 3 4B (free)",
+  'gemma-3-12b-it-free': "Gemma 3 12B (free)",
+  'gemma-3-27b-it-free': "Gemma 3 27B (free)",
+  'gemma-3n-e4b-it-free': "Gemma 3n E4B (free)"
 }
 
 export const defaultModel = 'openai';
@@ -54,6 +64,11 @@ export const modelMaxToken: Record<ModelOptions, number> = {
   'gemini-1.5-flash-8b-free': 1000000,
   'gemini-1.5-flash-free': 1000000,
   'gemini-1.5-pro-free': 2000000,
+  'gemma-3-1b-it-free': 32768,
+  'gemma-3-4b-it-free': 32768,
+  'gemma-3-12b-it-free': 32768,
+  'gemma-3-27b-it-free': 131072,
+  'gemma-3n-e4b-it-free': 8192
 };
 
 export const modelProviders: Record<ModelOptions, ModelProviders> = {
@@ -67,6 +82,11 @@ export const modelProviders: Record<ModelOptions, ModelProviders> = {
   'gemini-1.5-flash-8b-free': 'pavlik_tt',
   'gemini-1.5-flash-free': 'pavlik_tt',
   'gemini-1.5-pro-free': 'pavlik_tt',
+  'gemma-3-1b-it-free': 'pavlik_tt',
+  'gemma-3-4b-it-free': 'pavlik_tt',
+  'gemma-3-12b-it-free': 'pavlik_tt',
+  'gemma-3-27b-it-free': 'pavlik_tt',
+  'gemma-3n-e4b-it-free': 'pavlik_tt',
 }
 
 export const defaultUserMaxToken = 4000;

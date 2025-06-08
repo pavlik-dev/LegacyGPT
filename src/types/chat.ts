@@ -59,7 +59,13 @@ export type ModelOptions =
   | 'gemini-2.0-flash-lite-free'
   | 'gemini-1.5-flash-8b-free'
   | 'gemini-1.5-flash-free'
-  | 'gemini-1.5-pro-free';
+  | 'gemini-1.5-pro-free'
+  | 'gemma-3-1b-it-free'
+  | 'gemma-3-4b-it-free'
+  | 'gemma-3-12b-it-free'
+  | 'gemma-3-27b-it-free'
+  | 'gemma-3n-e4b-it-free'
+  ;
 
 export type ModelProviders =
   | "pollinations.ai"
