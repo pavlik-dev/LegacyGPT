@@ -54,19 +54,7 @@ export type ModelOptions =
   | "openai-fast"
   | "openai-large"
   | "openai-roblox"
-  | "qwen-coder"
-  | "llama"
-  | "llamascout"
-  | "mistral"
-  | "unity"
-  | "mirexa"
   | "searchgpt"
-  | "deepseek-reasoning"
-  | "phi"
-  | "hormoz"
-  | "deepseek"
-  | "grok"
-  | "bidara"
   
   | 'gemini-2.0-flash-lite-free'
   | 'gemini-1.5-flash-8b-free'
