@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import PopupModal from '@components/PopupModal';
 import { ConfigInterface, ModelOptions } from '@type/chat';
 import DownChevronArrow from '@icon/DownChevronArrow';
-import { modelMaxToken, modelOptions } from '@constants/chat';
+import { modelMaxToken, modelNames, modelOptions } from '@constants/chat';
 
 const ConfigMenu = ({
   setIsModalOpen,
@@ -75,14 +75,12 @@ export const ModelSelector = ({
         onClick={() => setDropDown((prev) => !prev)}
         aria-label='model'
       >
-        {_model}
+        {modelNames[_model]}
         <DownChevronArrow />
       </button>
-      <div
+      {dropDown && <><div
         id='dropdown'
-        className={`${
-          dropDown ? '' : 'hidden'
-        } absolute top-100 bottom-100 z-10 bg-white rounded-lg shadow-xl border-b border-black/10 dark:border-gray-900/50 text-gray-800 dark:text-gray-100 group dark:bg-gray-800 opacity-90`}
+        className="absolute mt-2 z-50 w-56 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-lg overflow-y-scroll"
       >
         <ul
           className='text-sm text-gray-700 dark:text-gray-200 p-0 m-0'
@@ -97,11 +95,11 @@ export const ModelSelector = ({
               }}
               key={m}
             >
-              {m}
+              {modelNames[m]}
             </li>
           ))}
         </ul>
-      </div>
+      </div></>}
     </div>
   );
 };
