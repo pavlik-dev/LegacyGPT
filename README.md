@@ -29,7 +29,6 @@
 <a href="https://github.com/pavlik-dev/LegacyGPT/pulls" target="_blank">
 <img src="https://img.shields.io/github/issues-pr/pavlik-dev/LegacyGPT?style=flat-square" alt="pull-requests"/>
 </a>
-<a href="https://twitter.com/intent/tweet?text=👋%20Check%20this%20amazing%20repo%20https://github.com/pavlik-dev/LegacyGPT,%20created%20by%20@nikushii_"><img src="https://img.shields.io/twitter/url?label=Share%20on%20Twitter&style=social&url=https%3A%2F%2Fgithub.com%pavlik-dev%2FLegacyGPT"></a>
 </p>
 
 <p align="center">
@@ -44,7 +43,7 @@
 ## 👋🏻 Introducing LegacyGPT
 
 <p align="center">
-    <a href="https://bettergpt.chat" target="_blank">
+    <a href="https://legacygpt.pavliktt.pp.ua" target="_blank">
         <img src="assets/preview.png" alt="landing" width=500 />
     </a>
 </p>
@@ -55,8 +54,7 @@ LegacyGPT is a project dedicated to recreating the classic ChatGPT interface fro
 
 LegacyGPT (as a fork of [Better ChatGPT](https://github.com/ztjhz/BetterChatGPT)) comes with a bundle of amazing features! Here are some of them:
 
-- Free access to GPT-4.1 and SearchGPT API with [pollinations.ai](https://pollinations.ai)
-- Free Gemini & Gemma API provided by [pavlik_tt](https://github.com/pavlik-dev/) (me :P)
+- Free access to GPT-4.1 and SearchGPT API with [pollinations.ai](https://pollinations.ai) and Gemini & Gemma API provided by [pavlik_tt](https://github.com/pavlik-dev/) (me :P)
 - Organize chats into folders (with colours)
 - Filter chats and folders
 - ShareGPT integration
