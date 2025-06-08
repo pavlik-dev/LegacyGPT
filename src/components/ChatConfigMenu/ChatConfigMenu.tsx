@@ -94,24 +94,6 @@ const ChatConfigPopup = ({
           _setSystemMessage={_setSystemMessage}
         />
         <ModelSelector _model={_model} _setModel={_setModel} />
-        <MaxTokenSlider
-          _maxToken={_maxToken}
-          _setMaxToken={_setMaxToken}
-          _model={_model}
-        />
-        <TemperatureSlider
-          _temperature={_temperature}
-          _setTemperature={_setTemperature}
-        />
-        <TopPSlider _topP={_topP} _setTopP={_setTopP} />
-        <PresencePenaltySlider
-          _presencePenalty={_presencePenalty}
-          _setPresencePenalty={_setPresencePenalty}
-        />
-        <FrequencyPenaltySlider
-          _frequencyPenalty={_frequencyPenalty}
-          _setFrequencyPenalty={_setFrequencyPenalty}
-        />
         <div
           className='btn btn-neutral cursor-pointer mt-5'
           onClick={handleReset}
