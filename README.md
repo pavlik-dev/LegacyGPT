@@ -54,7 +54,7 @@ LegacyGPT is a project dedicated to recreating the classic ChatGPT interface fro
 
 LegacyGPT (as a fork of [Better ChatGPT](https://github.com/ztjhz/BetterChatGPT)) comes with a bundle of amazing features! Here are some of them:
 
-- Free access to GPT-4.1 and SearchGPT API with [pollinations.ai](https://pollinations.ai) and Gemini & Gemma API provided by [pavlik_tt](https://github.com/pavlik-dev/) (me :P)
+- Free access to GPT-4.1 and SearchGPT API provided by [pollinations.ai](https://pollinations.ai) and Gemini & Gemma API provided by [pavlik_tt](https://github.com/pavlik-dev/) (me :P)
 - Organize chats into folders (with colours)
 - Filter chats and folders
 - ShareGPT integration
