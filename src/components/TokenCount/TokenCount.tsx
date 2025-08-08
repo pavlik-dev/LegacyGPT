@@ -16,7 +16,7 @@ const TokenCount = React.memo(() => {
   const model = useStore((state) =>
     state.chats
       ? state.chats[state.currentChatIndex].config.model
-      : 'openai'
+      : 'gpt-5-nano'
   );
 
   const cost = useMemo(() => 0, [model, tokenCount]);
