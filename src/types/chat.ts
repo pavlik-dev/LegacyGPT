@@ -50,28 +50,13 @@ export interface Folder {
 }
 
 export type ModelOptions =
-  | "openai"
-  | "openai-fast"
-  | "openai-large"
-  | "openai-roblox"
-  | "searchgpt"
-  
-  | 'gemini-2.0-flash-lite-free'
-  | 'gemini-1.5-flash-8b-free'
-  | 'gemini-1.5-flash-free'
-  | 'gemini-1.5-pro-free'
-  | 'gemma-3-1b-it-free'
-  | 'gemma-3-4b-it-free'
-  | 'gemma-3-12b-it-free'
-  | 'gemma-3-27b-it-free'
-  | 'gemma-3n-e4b-it-free'
-  ;
+  | "gpt-5-nano"
+  | "gpt-4.1-nano"
+  | "gpt-4.1"
+  | "searchgpt";
 
 export type ModelProviders =
-  | "pollinations.ai"
-  | "pavlik_tt"
-  | "Google"
-  | "OpenAI";
+  | "pollinations.ai";
 
 export type TotalTokenUsed = {
   [model in ModelOptions]?: {

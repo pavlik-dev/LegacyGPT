@@ -18,75 +18,33 @@ Carefully heed the user's instructions.
 Respond using Markdown.`;
 
 export const modelOptions: ModelOptions[] = [
-  "openai",
-  "openai-fast",
-  "openai-large",
-  "openai-roblox",
-  "searchgpt",
-  'gemini-2.0-flash-lite-free',
-  'gemini-1.5-flash-8b-free',
-  'gemini-1.5-flash-free',
-  'gemini-1.5-pro-free',
-  'gemma-3-1b-it-free',
-  'gemma-3-4b-it-free',
-  'gemma-3-12b-it-free',
-  'gemma-3-27b-it-free',
-  'gemma-3n-e4b-it-free',
+  "gpt-5-nano",
+  "gpt-4.1-nano",
+  "gpt-4.1",
+  "searchgpt"
 ];
 
 export const modelNames: Record<ModelOptions, string> = {
-  "openai": "GPT-4.1-mini",
-  "openai-fast": "GPT-4.1-nano",
-  "openai-large": "GPT-4.1",
-  "openai-roblox": "GPT-4.1-mini (Roblox)",
-  "searchgpt": "SearchGPT",
-  'gemini-2.0-flash-lite-free': "Gemini 2.0 Flash Lite (free)",
-  'gemini-1.5-flash-8b-free': "Gemini 1.5 Flash 8B (free)",
-  'gemini-1.5-flash-free': "Gemini 1.5 Flash (free)",
-  'gemini-1.5-pro-free': "Gemini 1.5 Pro (free)",
-  'gemma-3-1b-it-free': "Gemma 3 1B (free)",
-  'gemma-3-4b-it-free': "Gemma 3 4B (free)",
-  'gemma-3-12b-it-free': "Gemma 3 12B (free)",
-  'gemma-3-27b-it-free': "Gemma 3 27B (free)",
-  'gemma-3n-e4b-it-free': "Gemma 3n E4B (free)"
+  "gpt-5-nano": "GPT-5 nano",
+  "gpt-4.1-nano": "GPT-4.1 nano",
+  "gpt-4.1": "GPT-4.1",
+  "searchgpt": "SearchGPT"
 }
 
-export const defaultModel = 'openai';
+export const defaultModel = 'gpt-5-nano';
 
 export const modelMaxToken: Record<ModelOptions, number> = {
-  'openai': 1047576,
-  'openai-fast': 1047576,
-  'openai-large': 1047576,
-  "openai-roblox": 1047576,
-  'searchgpt': 128000,
-
-  'gemini-2.0-flash-lite-free': 1048576,
-  'gemini-1.5-flash-8b-free': 1000000,
-  'gemini-1.5-flash-free': 1000000,
-  'gemini-1.5-pro-free': 2000000,
-  'gemma-3-1b-it-free': 32768,
-  'gemma-3-4b-it-free': 32768,
-  'gemma-3-12b-it-free': 32768,
-  'gemma-3-27b-it-free': 131072,
-  'gemma-3n-e4b-it-free': 8192
+  'gpt-5-nano': 400000,
+  'gpt-4.1-nano': 1047576,
+  'gpt-4.1': 1047576,
+  'searchgpt': 128000
 };
 
 export const modelProviders: Record<ModelOptions, ModelProviders> = {
-  'openai': 'pollinations.ai',
-  'openai-fast': 'pollinations.ai',
-  'openai-large': 'pollinations.ai',
-  "openai-roblox": 'pollinations.ai',
+  'gpt-5-nano': 'pollinations.ai',
+  'gpt-4.1-nano': 'pollinations.ai',
+  'gpt-4.1': 'pollinations.ai',
   'searchgpt': 'pollinations.ai',
-
-  'gemini-2.0-flash-lite-free': 'pavlik_tt',
-  'gemini-1.5-flash-8b-free': 'pavlik_tt',
-  'gemini-1.5-flash-free': 'pavlik_tt',
-  'gemini-1.5-pro-free': 'pavlik_tt',
-  'gemma-3-1b-it-free': 'pavlik_tt',
-  'gemma-3-4b-it-free': 'pavlik_tt',
-  'gemma-3-12b-it-free': 'pavlik_tt',
-  'gemma-3-27b-it-free': 'pavlik_tt',
-  'gemma-3n-e4b-it-free': 'pavlik_tt',
 }
 
 export const defaultUserMaxToken = 4000;

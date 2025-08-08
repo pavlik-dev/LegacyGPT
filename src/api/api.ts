@@ -78,13 +78,10 @@ export const getChatCompletionStream = async (
     }
   }
 
-  const endpoints: Record<ModelProviders, string> = {
-    'pollinations.ai': 'https://text.pollinations.ai/openai',
-    'pavlik_tt': 'https://gpt.pavliktt.pp.ua/',
-    'Google': `https://gpt.pavliktt.pp.ua/`,
-    'OpenAI': 'https://api.openai.com/v1/chat/completions'
-  }
-  endpoint = endpoints[modelProviders[config.model]]
+  //const endpoints: Record<ModelProviders, string> = {
+  //  'pollinations.ai': 'https://text.pollinations.ai/openai',
+  //}
+  endpoint = 'https://text.pollinations.ai/openai';
 
   const response = await fetch(endpoint, {
     method: 'POST',
@@ -94,6 +91,7 @@ export const getChatCompletionStream = async (
       ...config,
       max_tokens: undefined,
       stream: true,
+      private: true
     }),
   });
   if (response.status === 404 || response.status === 405) {
